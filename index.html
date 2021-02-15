@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors!</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <h1>Rock Paper Scissors</h1>
+    </header>
+    <section id="numberOfRounds">
+        <div id="rounds">
+            <p>How many rounds?</p>
+            <form id="game">
+                <div class="firstRow">
+                    <input type="radio" name="rounds" id="five" value="5">
+                    <label class="container" for="five">5</label>
+                    <input type="radio" name="rounds" id="ten" value="10">
+                    <label class="container" for="ten">10</label>
+                </div>
+                <div class="secondRow">
+                    <input type="radio" name="rounds" id="fifteen" value="15">
+                    <label class="container1" for="fifteen">15</label>
+                    <input type="radio" name="rounds" id="twenty" value="20">
+                    <label class="container1" for="twenty">20</label>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section id="playersScores">
+        <h2 id="comment">Let's play!</h2>
+        <div id="score">
+            <p id="scoreCounter">0 : 0</p>
+            <p>User</p>
+            <p>Comp</p>
+        </div>
+    </section>
+    <p id="compComment"></p>
+    <section id="handsIcons">
+        <div id="hands">
+            <button id="rock"><i class="fa fa-hand-rock-o"></i></button>
+            <button id="paper"><i class="fa fa-hand-paper-o"></i></button>
+            <button id="scissors"><i class="fa fa-hand-scissors-o"></i></button>
+        </div>
+    </section>
+    <p id="move">Make your move.</p>
+    <section id="restartGame">
+        <button id="reset">Restart</button>
+    </section>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
